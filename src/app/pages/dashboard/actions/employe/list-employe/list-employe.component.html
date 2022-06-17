@@ -5,8 +5,7 @@
       <div class="fast-action-name">Novo Funcionário</div>
     </div>
     <div class="search-bar">
-      <input type="text" [(ngModel)]="searchValue" placeholder="Pesquise
-        Funcionário..." />
+      <input type="text" [(ngModel)]="searchValue" placeholder="Pesquise Funcionário..." />
     </div>
     <div>
       <div class="search-button"><i class='bx bx-search'></i></div>
@@ -64,7 +63,7 @@
       <input type="number" placeholder="" />
     </div>
   </div>
-  <div class="button-action green save">
+  <div class="button-action green save" (click)="stopRegistering()" >
     <div class="icon"><i class='bx bxs-user-check'></i></div>
     <div class="fast-action-name">Salvar</div>
   </div>
