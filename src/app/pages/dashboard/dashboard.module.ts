@@ -6,6 +6,11 @@ import { RouterModule } from '@angular/router';
 import { ActionsComponent } from './actions/actions.component';
 import { CreateCompanyComponent } from './actions/company/create-company/create-company.component';
 import { ListCompanyComponent } from './actions/company/list-company/list-company.component';
+import { CreateUserComponent } from './actions/user/create-user/create-user.component';
+import { ListUserComponent } from './actions/user/list-user/list-user.component';
+import { ListEmployeComponent } from './actions/employe/list-employe/list-employe.component';
+import { CreateEmployeComponent } from './actions/employe/create-employe/create-employe.component';
+import { ListBillingComponent } from './actions/billing/list-billing/list-billing.component';
 
 
 @NgModule({
@@ -13,7 +18,12 @@ import { ListCompanyComponent } from './actions/company/list-company/list-compan
     DashboardComponent,
     ActionsComponent,
     CreateCompanyComponent,
-    ListCompanyComponent
+    ListCompanyComponent,
+    CreateUserComponent,
+    ListUserComponent,
+    ListEmployeComponent,
+    CreateEmployeComponent,
+    ListBillingComponent
   ],
   imports: [
     CommonModule,
