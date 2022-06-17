@@ -23,6 +23,6 @@ export class AppComponent implements OnInit{
   }
 
   confirm() {
-    this.router.navigate(['/Resume']);
+    this.router.navigate(['/resume']);
   }
 }
