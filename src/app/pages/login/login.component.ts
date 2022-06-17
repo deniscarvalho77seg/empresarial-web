@@ -23,7 +23,8 @@ export class LoginComponent implements OnInit {
   }
 
   confirm() {
-    this.router.navigate(['/resume']);
+    console.log("opa")
+    this.router.navigate(['dashboard']);
   }
 
 }

@@ -1,19 +1,25 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
-import { DashBoardComponent } from './pages/dash-board/dash-board/dash-board.component';
-import { LoginComponent } from './pages/login/login/login.component';
-import { ResumeComponent } from './pages/resume/resume.component';
+import { ActionsComponent } from './pages/dashboard/actions/actions.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { ResumeComponent } from './pages/dashboard/resume/resume.component';
+import { LoginComponent } from './pages/login/login.component';
 
 
 const routes: Routes = [
-  { path: '', component: LoginComponent},
-  { path: 'dashboard', component: DashBoardComponent},
-  { path: 'resume', component: ResumeComponent}
+  { path: '', component: LoginComponent },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    children: [ 
+      { path: '', component: ResumeComponent},
+      { path: 'actions', component: ActionsComponent}]
+  },
+
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{ relativeLinkResolution: 'corrected' }),],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
