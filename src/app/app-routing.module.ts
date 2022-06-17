@@ -5,7 +5,7 @@ import { DashBoardComponent } from './pages/dash-board/dash-board/dash-board.com
 import { ResumeComponent } from './pages/resume/resume/resume.component';
 
 const routes: Routes = [
-  { path: '/', component: AppComponent},
+  { path: '', component: AppComponent},
   { path: 'dashboard', component: DashBoardComponent},
   { path: 'resume', component: ResumeComponent}
 ];
