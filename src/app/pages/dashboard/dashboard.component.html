@@ -1,14 +1,28 @@
-
-
 <div class="container">
-  <div class="main">
-    <div class="logo">
-      <img src="../../../../assets/img/logo.svg" alt="">
-    </div>
-    <div class="content">
+    <div class="main">
+        <div class="main-content">
+            <menu>
+                <div class="avatar-container">
+                    <img src="assets/img/profile-pic.jpg" class="avatar">
+                    <div class="user">
+                        <h3>Olá,<span class="user-name"> Usuário</span></h3>
+                        <span>usuario@77seg.io</span>
+                    </div>
 
-      <router-outlet></router-outlet>
+                </div>
+                <ul>
+                    <li><a>Dashboard</a></li>
+                    <li><a class="purple-900">Link 1</a></li>
+                    <li><a class="purple-900">Link 2</a></li>
+                </ul>
+            </menu>
+            <div class="content">
+                <router-outlet></router-outlet>
+            </div>
+            <footer class="footer">77seg | 2022 - Todos os direitos reservados.</footer>
+
+        </div>
+
     </div>
-  </div>
-  <footer class="footer">77seg | 2022 - Todos os direitos reservados.</footer>
+
 </div>
