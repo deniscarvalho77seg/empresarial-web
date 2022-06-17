@@ -25,7 +25,6 @@
     width: 100%;
     padding: 0.8rem 1rem;
     margin-bottom: 1rem;
-    border: solid 1px #b7b9ce;
     justify-content: space-around;
     display: flex;    
     border-radius: 10px;
@@ -51,9 +50,24 @@
 .action{
     font-size: 1rem;
     padding: 0.2rem 1rem;
-    margin: 0 1rem;
+    margin-right: 0.25rem;
     border:0;
-    background-color: #b7b9ce;
+    background-color: #30383d;
+    border-radius: 5px;
+    color: white;
+    transition:0.3s;
+    
+}
+.action:hover{
+    filter: brightness(0.9);
+
+
+}
+.action-del{
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+    border:0;
+    background-color: #ef4444;
     border-radius: 5px;
     color: white;
     transition:0.3s;
@@ -64,7 +78,7 @@
 
 }
 .search-button{
-    padding: 0.2rem 1rem;
+    padding: 1rem 1rem;
     margin: 0 1rem;
     background-color: #30383d;
     border: 1px solid #30383d;
@@ -75,4 +89,22 @@
     display: flex;
     justify-content: space-between;
     
+}
+.search-bar {
+    width: 550px;
+    margin-left: 4rem;
+
+}
+
+.search-bar input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #b7b9ce;
+    height: 2.5rem;
+    margin-top: 0.25rem;
+
+    &::placeholder{
+        font-family: Poppins;
+        padding: 1rem;
+    }
 }
