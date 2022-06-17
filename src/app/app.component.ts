@@ -6,23 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent{
   title = 'empresarial-web';
-  loggedIn = false;
-
-  constructor(private router: Router) {
-
-  }
-
-  ngOnInit() {
-    this.verifyLogin();
-  }
-
-  verifyLogin() {
-    this.loggedIn = true;
-  }
-
-  confirm() {
-    this.router.navigate(['/resume']);
-  }
+  
 }
