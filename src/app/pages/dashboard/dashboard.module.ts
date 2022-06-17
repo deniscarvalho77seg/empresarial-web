@@ -11,6 +11,8 @@ import { ListUserComponent } from './actions/user/list-user/list-user.component'
 import { ListEmployeComponent } from './actions/employe/list-employe/list-employe.component';
 import { CreateEmployeComponent } from './actions/employe/create-employe/create-employe.component';
 import { ListBillingComponent } from './actions/billing/list-billing/list-billing.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { ListBillingComponent } from './actions/billing/list-billing/list-billin
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    BrowserModule,
+    FormsModule
   ]
 })
 export class DashboardModule { }

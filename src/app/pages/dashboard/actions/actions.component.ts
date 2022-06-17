@@ -13,7 +13,7 @@ export class ActionsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  goTo(url:String){
+  goTo(url: String) {
     this.router.navigate([url]);
   }
 
