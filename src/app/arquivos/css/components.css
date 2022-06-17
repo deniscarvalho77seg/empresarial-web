@@ -1,0 +1,59 @@
+dashboard-container{
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: flex;
+}
+
+.src-bar input{
+    border: none;
+    border-bottom: 1px solid rgb(105, 105, 105);
+    height: 31px;
+    width: 100%;
+}
+
+dashboard-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.relatorios {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-action {
+    max-width: 300px;
+    width: 200px;
+    border: solid 1px #b7b9ce;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.card-action:hover {
+    cursor: pointer;
+    background-color: #868686;
+    color: white;
+}
+
+.card-action .icon {
+    font-size: 3rem;
+    margin: 10px;
+}
+
+.card-action .name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
