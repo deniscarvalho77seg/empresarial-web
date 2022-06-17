@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ActionsComponent } from './pages/dashboard/actions/actions.component';
+import { ListBillingComponent } from './pages/dashboard/actions/billing/list-billing/list-billing.component';
+import { ListCompanyComponent } from './pages/dashboard/actions/company/list-company/list-company.component';
 import { ListEmployeComponent } from './pages/dashboard/actions/employe/list-employe/list-employe.component';
+import { ListUserComponent } from './pages/dashboard/actions/user/list-user/list-user.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ResumeComponent } from './pages/dashboard/resume/resume.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -15,7 +18,10 @@ const routes: Routes = [
     children: [
       { path: '', component: ResumeComponent},
       { path: 'actions', component: ActionsComponent},
-      { path: 'listEmploye', component: ListEmployeComponent}]
+      { path: 'listEmploye', component: ListEmployeComponent},
+      { path: 'listBillings', component: ListBillingComponent},
+      { path: 'listCompanys', component: ListCompanyComponent},
+      { path: 'listUsers', component: ListUserComponent}]
   },
 
 ];
