@@ -1,29 +1,35 @@
-<div class="topo">
-  <div class="button-action green">
-    <div class="icon"><i class='bx bx-user-plus'></i></div>
-    <div class="fast-action-name">Cadastrar</div>
+<div class="listContent" *ngIf="!checkRegistering()">
+  <div class="topo">
+    <div class="button-action green" (click)="startRegistering()">
+      <div class="icon"><i class='bx bx-user-plus'></i></div>
+      <div class="fast-action-name">Cadastrar</div>
+    </div>
+    <div class="search-bar">
+      <input type="text" [(ngModel)]="searchValue" placeholder="Pesquise
+        Funcionário..." />
+    </div>
+    <div>
+      <div class="search-button"><i class='bx bx-search'></i></div>
+    </div>
   </div>
-  <div class="search-bar">
-    <input type="text" [(ngModel)]="searchValue" placeholder="Pesquise
-      Funcionário..." />
-  </div>
-  <div>
-    <div class="search-button"><i class='bx bx-search'></i></div>
-  </div>
+  <table id="employe">
+    <tr>
+      <th>Nome do Funcionário</th>
+      <th>Status</th>
+      <th>Açoes</th>
+    </tr>
+    <tr *ngFor="let employe of getListEmploye()">
+      <td>{{employe.name}}</td>
+      <td>{{employe.status}}</td>
+      <td><button class="action"><i class='bx bx-edit-alt'></i></button> <button
+          class="action-del"><i class='bx bx-trash'></i></button>
+      </td>
+    </tr>
+  </table>
 </div>
-<div>
+
+<div class="formContent" *ngIf="checkRegistering()">
+  Form!!!!
+
+  <button (click)="stopRegistering()">X</button>
 </div>
-<table id="employe">
-  <tr>
-    <th>Nome do Funcionário</th>
-    <th>Status</th>
-    <th>Açoes</th>
-  </tr>
-  <tr *ngFor="let employe of getListEmploye()">
-    <td>{{employe.name}}</td>
-    <td>{{employe.status}}</td>
-    <td><button class="action"><i class='bx bx-edit-alt'></i></button> <button
-        class="action-del"><i class='bx bx-trash'></i></button>
-    </td>
-  </tr>
-</table>

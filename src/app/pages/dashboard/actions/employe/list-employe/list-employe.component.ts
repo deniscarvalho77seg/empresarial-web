@@ -12,6 +12,7 @@ export class ListEmployeComponent implements OnInit {
   listEmploye: Employe[] = [];
   listEmployeFiltered: Employe[] = [];
   searchValue: string = '';
+  registering: boolean = false;
   ngOnInit(): void {
     this.loadListEmploye();
   }
@@ -33,7 +34,7 @@ export class ListEmployeComponent implements OnInit {
     });
   }
 
-  verifyNameBySrc(name:String): Boolean {
+  verifyNameBySrc(name: String): Boolean {
     return name.toLowerCase().includes(this.searchValue.toLowerCase())
   }
 
@@ -67,5 +68,17 @@ export class ListEmployeComponent implements OnInit {
       name: 'Joana',
       status: 'inactive',
     }]
+  }
+
+  checkRegistering(): Boolean {
+    return this.registering;
+  }
+
+  startRegistering(): void {
+    this.registering = true;
+  }
+
+  stopRegistering(): void {
+    this.registering = false;
   }
 }
