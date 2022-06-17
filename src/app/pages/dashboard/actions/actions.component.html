@@ -1,21 +1,21 @@
 <div class="actions">
 
-    <div class="card-action card-action-lead fast-action">
-        <a href="#">
+    <div class="card-action card-action-lead fast-action" (click)="goTo('dashboard/listEmploye')">
+        <a>
             <div class="icon"><i class='bx bxs-user-badge bx-border'></i></div>
             <div class="fast-action-name">Funcionários</div>
         </a>
     </div>
 
-    <div class="card-action card-action-orange fast-action">
-        <a href="#">
+    <div class="card-action card-action-orange fast-action" (click)="goTo('dashboard/listBillings')">
+        <a>
             <div class="icon"><i class='bx bx-bar-chart-square  bx-border'></i></div>
             <div class="fast-action-name">Faturamento</div>
         </a>
     </div>
 
 
-    <div class="card-action card-action-roxo fast-action" (click)="goTo('dashboard/listEmploye')">
+    <div class="card-action card-action-roxo fast-action" (click)="goTo('dashboard/listCompanys')">
         <a>
             <div class="icon"><i class='bx bx-buildings bx-border'></i></div>
             <div class="fast-action-name">Empresas</div>
@@ -24,8 +24,8 @@
 
 
 
-    <div class="card-action card-action-cian fast-action">
-        <a href="#">
+    <div class="card-action card-action-cian fast-action" (click)="goTo('dashboard/listUsers')">
+        <a>
             <div class="icon"><i class='bx bx-user bx-border'></i></div>
             <div class="fast-action-name">Usuarios</div>
         </a>
