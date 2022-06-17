@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
+    padding-top: 5rem;
 }
 
 .relatorios {
@@ -25,7 +26,7 @@
 .card-action-roxo{
     background-color: #70367C;
     border: 1px solid #70367C;
-    
+
 }
 .card-action-lead{
     background-color: #b7b9ce;
@@ -34,13 +35,13 @@
 }
 .card-action-cian{
     background-color: #95CFD5;
-    border: solid 1px #95CFD5;      
-    
+    border: solid 1px #95CFD5;
+
 }
 .card-action-orange{
-    background-color: #FD7E50;    
-    border: solid 1px #FD7E50;      
-    
+    background-color: #FD7E50;
+    border: solid 1px #FD7E50;
+
 }
 .fast-action:hover{
     box-shadow: 5px 2px 5px 0px #d6d6d6;
@@ -52,7 +53,7 @@
     text-align: center;
 }
 .fast-action-name{
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
     font-weight: 800;
 
 }
