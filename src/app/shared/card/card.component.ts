@@ -8,7 +8,7 @@ import { PageService } from '../service/page.service';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-  @Input() listClass: String = "";
+  @Input() listClass: String = "card-action fast-action";
   @Input() icon: String = "";
   @Input() url: String = "";
   @Input() title: String = "";

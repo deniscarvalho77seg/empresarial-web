@@ -1,12 +1,10 @@
 export class ActionCard {
-    style: string = "";
     icon: string = "";
     url: string = "";
     title: string = "";
     pageTarget: string = "";
     color: string = "";
-    constructor(style: string, color: string,icon: string, url: string, title: string, pageTarget: string) {
-        this.style = style;
+    constructor(color: string,icon: string, url: string, title: string, pageTarget: string) {
         this.icon = icon;
         this.url = url;
         this.title = title;

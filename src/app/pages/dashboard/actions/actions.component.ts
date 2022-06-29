@@ -17,36 +17,32 @@ export class ActionsComponent implements OnInit {
 
   getListActions(): ActionCard[] {
     return [{
-      style: "card-action card-action-lead fast-action",
       icon: "bx bxs-user-badge bx-border",
       url: "dashboard/actionsEmploye",
       title: "Funcionário",
       pageTarget: "Funcionário",
-      color: "purple",
+      color: "bg-lead",
     },
     {
-      style: "card-action card-action-orange fast-action",
       icon: "bx bx-bar-chart-square  bx-border",
       url: "dashboard/listBillings",
       title: "Faturamento",
       pageTarget: "Faturamento",
-      color: "purple",
+      color: "bg-orange",
     },
     {
-      style: "card-action card-action-roxo fast-action",
       icon: "bx bx-buildings bx-border",
       url: "dashboard/listCompanys",
       title: "Empresas",
       pageTarget: "Empresas",
-      color: "purple",
+      color: "bg-purple",
     },
     {
-      style: "card-action card-action-cian fast-action",
       icon: "bx bx-user bx-border",
       url: "dashboard/listUsers",
       title: "Usuarios",
       pageTarget: "Usuarios",
-      color: "purple",
+      color: "bg-cian",
     },]
   }
 

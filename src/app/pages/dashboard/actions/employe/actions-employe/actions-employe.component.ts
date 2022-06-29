@@ -21,36 +21,32 @@ export class ActionsEmployeComponent implements OnInit {
 
   getListActions(): ActionCard[] {
     return [{
-      style: "card-action card-action-lead fast-action",
       icon: "bx bx-plus-medical",
       url: "dashboard/actionsEmploye",
       title: "Adicionar",
       pageTarget: "Adicionar",
-      color: "purple",
+      color: "bg-green",
     },
     {
-      style: "card-action card-action-orange fast-action",
       icon: "bx bx-search-alt-2",
       url: "dashboard/listBillings",
       title: "Pesquisar",
       pageTarget: "Pesquisar",
-      color: "purple",
+      color: "bg-purple",
     },
     {
-      style: "card-action card-action-roxo fast-action",
       icon: "bx bx-edit-alt",
       url: "dashboard/listCompanys",
       title: "Alterar",
       pageTarget: "Alterar",
-      color: "purple",
+      color: "bg-purple",
     },
     {
-      style: "card-action card-action-cian fast-action",
       icon: "bx bx-trash",
       url: "dashboard/listUsers",
       title: "Deletar",
       pageTarget: "Deletar",
-      color: "purple",
+      color: "bg-purple",
     },]
   }
 
