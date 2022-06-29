@@ -32,21 +32,21 @@ export class ActionsEmployeComponent implements OnInit {
       url: "dashboard/listBillings",
       title: "Pesquisar",
       pageTarget: "Pesquisar",
-      color: "bg-purple",
+      color: "bg-cian",
     },
     {
       icon: "bx bx-edit-alt",
       url: "dashboard/listCompanys",
       title: "Alterar",
       pageTarget: "Alterar",
-      color: "bg-purple",
+      color: "bg-orange",
     },
     {
       icon: "bx bx-trash",
       url: "dashboard/listUsers",
       title: "Deletar",
       pageTarget: "Deletar",
-      color: "bg-purple",
+      color: "bg-red",
     },]
   }
 

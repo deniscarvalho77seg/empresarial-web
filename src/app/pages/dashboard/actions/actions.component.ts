@@ -21,7 +21,7 @@ export class ActionsComponent implements OnInit {
       url: "dashboard/actionsEmploye",
       title: "Funcionário",
       pageTarget: "Funcionário",
-      color: "bg-lead",
+      color: "bg-red",
     },
     {
       icon: "bx bx-bar-chart-square  bx-border",

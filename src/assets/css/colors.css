@@ -7,33 +7,33 @@
 }
 
 .bg-green {
-    background-color: #188d27;
+    background-color: #15C785;
 }
 
 .bd-green {
-    border: solid 1px #188d27;
+    border: solid 1px #15C785;
 }
 
-.bg-lead {
-    background-color: #b7b9ce;
+.bg-red {
+    background-color: #F87474;
 }
 
-.bd-lead {
-    border: solid 1px #b7b9ce;
+.bd-red {
+    border: solid 1px #F87474;
 }
 
 .bg-cian {
-    background-color: #95CFD5;
+    background-color: #3AB0FF;
 }
 
 .bd-cian {
-    border: solid 1px #95CFD5;
+    border: solid 1px #3AB0FF;
 }
 
 .bg-orange {
-    background-color: #FD7E50;
+    background-color: #FFB562;
 }
 
 .bd-orange {
-    border: solid 1px #FD7E50;
+    border: solid 1px #FFB562;
 }
