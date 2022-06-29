@@ -21,28 +21,24 @@ export class ActionsComponent implements OnInit {
       icon: "bx bxs-user-badge bx-border",
       url: "dashboard/actionsEmploye",
       title: "Funcionário",
-      pageTarget: "Funcionário",
       color: "bg-red",
     },
     {
       icon: "bx bx-bar-chart-square  bx-border",
       url: "dashboard/listBillings",
       title: "Faturamento",
-      pageTarget: "Faturamento",
       color: "bg-orange",
     },
     {
       icon: "bx bx-buildings bx-border",
       url: "dashboard/listCompanys",
       title: "Empresas",
-      pageTarget: "Empresas",
       color: "bg-purple",
     },
     {
       icon: "bx bx-user bx-border",
       url: "dashboard/listUsers",
       title: "Usuarios",
-      pageTarget: "Usuarios",
       color: "bg-cian",
     },]
   }

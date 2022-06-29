@@ -1,7 +1,6 @@
 <app-title-page [title]="pageService.getActualPageTitle()"></app-title-page>
 <div class="actions">
     <section *ngFor="let action of getListActions()">
-        <app-card [color]="action.color" [url]="action.url" [icon]="action.icon"
-            [title]="action.title" [pageTarget]="action.pageTarget"></app-card>
+        <app-card [color]="action.color" [url]="action.url" [icon]="action.icon" [title]="action.title"></app-card>
     </section>
 </div>

@@ -23,30 +23,26 @@ export class ActionsEmployeComponent implements OnInit {
   getListActions(): ActionCard[] {
     return [{
       icon: "bx bx-plus-medical",
-      url: "dashboard/actionsEmploye",
+      url: "dashboard/addEmploye",
       title: "Adicionar",
-      pageTarget: "Adicionar",
       color: "bg-green",
     },
     {
       icon: "bx bx-search-alt-2",
       url: "dashboard/listBillings",
       title: "Pesquisar",
-      pageTarget: "Pesquisar",
       color: "bg-cian",
     },
     {
       icon: "bx bx-edit-alt",
       url: "dashboard/listCompanys",
       title: "Alterar",
-      pageTarget: "Alterar",
       color: "bg-orange",
     },
     {
       icon: "bx bx-trash",
       url: "dashboard/listUsers",
       title: "Deletar",
-      pageTarget: "Deletar",
       color: "bg-red",
     },]
   }
