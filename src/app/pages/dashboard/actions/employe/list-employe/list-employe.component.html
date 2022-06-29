@@ -1,14 +1,12 @@
-<div class="listContent" *ngIf="!checkRegistering()">
+<div class="listContent" *ngIf="!checkRegistering() && !checkSearching() ">
   <div class="topo">
     <div class="button-action green" (click)="startRegistering()">
       <div class="icon"><i class='bx bx-user-plus'></i></div>
       <div class="fast-action-name">Novo Funcionário</div>
     </div>
-    <div class="search-bar">
-      <input type="text" [(ngModel)]="searchValue" placeholder="Pesquise Funcionário..." />
-    </div>
-    <div>
-      <div class="search-button"><i class='bx bx-search'></i></div>
+    <div class="button-action yellow" (click)="startSearching()">
+      <div class="icon"><i class='bx bx-search-alt-2'></i></div>
+      <div class="fast-action-name">Pesquisar</div>
     </div>
   </div>
   <table id="employe">
@@ -20,8 +18,8 @@
     <tr *ngFor="let employe of getListEmploye()">
       <td>{{employe.name}}</td>
       <td>{{employe.status}}</td>
-      <td><button class="action"><i class='bx bx-edit-alt'></i></button> <button
-          class="action-del"><i class='bx bx-trash'></i></button>
+      <td><button class="action" (click)="edit()"><i class='bx bx-edit-alt'></i></button> <button
+          class="action-del"><i class='bx bx-trash' (click)="delete()"></i></button>
       </td>
     </tr>
   </table>
@@ -31,12 +29,12 @@
   <button (click)="stopRegistering()" class="close">X</button>
   <div class="row">
     <div class='input-form'>
-      <label>Nome</label>
-      <input type="text" placeholder="Preencha o nome completo" />
-    </div>
-    <div class='input-form'>
       <label>CPF</label>
       <input type="number" placeholder="Digite os números do CPF" />
+    </div>
+    <div class='input-form'>
+      <label>Nome</label>
+      <input type="text" placeholder="Preencha o nome completo" />
     </div>
     <div class='input-form'>
       <label>RG</label>
@@ -69,3 +67,70 @@
   </div>
 
 </div>
+<div class="formContent" *ngIf="checkSearching()">
+  <button (click)="stopSearching()" class="close">X</button>
+  <div class="row">
+    <div class='input-form'>
+      <label>CPF</label>
+      <input type="number" placeholder="Digite os números do CPF" />
+    </div>
+    <div class='input-form'>
+      <label>Nome</label>
+      <input type="text" placeholder="Preencha o nome completo" />
+    </div>
+    <div class='input-form'>
+      <label>RG</label>
+      <input type="number" placeholder="Digite os números do RG" />
+    </div>
+  </div>
+  <div class="row">
+    <div class='input-form'>
+      <label>Endereço</label>
+      <input type="text" placeholder="Preencha o endereço" />
+    </div>
+    <div class='input-form'>
+      <label>Nº</label>
+      <input type="text" placeholder="Número/complemento" />
+    </div>
+  </div>
+  <div class="row">
+    <div class='input-form'>
+      <label>Dados</label>
+      <input type="text" placeholder="" />
+    </div>
+    <div class='input-form'>
+      <label>Dados</label>
+      <input type="number" placeholder="" />
+    </div>
+  </div>
+  <div class="button-action green save" (click)="stopSearching()" >
+    <div class="icon"><i class='bx bxs-user-check'></i></div>
+    <div class="fast-action-name">Pesquisa</div>
+  </div>
+
+</div>
+
+<app-modal #modal [mostrar]="modalToggle">
+  <h1>Lorem, ipsum dolor.</h1>
+  <p>
+    Lorem ipsum, dolor sit amet
+    consectetur adipisicing elit.
+    Earum dicta non alias distinctio,
+    aliquid aperiam ipsum provident
+    quae nihil voluptatibus veniam
+    fuga similique facilis consequatur
+    reiciendis recusandae. Velit magni
+    distinctio corporis eaque ad itaque
+    ex impedit accusamus. Debitis pariatur
+    cum quam rerum reprehenderit quod
+    iure, in explicabo facere vero nemo?
+  </p>
+  
+  
+  <button
+    (click)="acaoPrimaria(); modal.toggle();"
+    class="btn-primario">Ação</button>
+
+  <button
+    class="btn-secundario">Ação 2</button>
+</app-modal> 

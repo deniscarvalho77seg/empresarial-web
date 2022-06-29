@@ -13,6 +13,8 @@ import { CreateEmployeComponent } from './actions/employe/create-employe/create-
 import { ListBillingComponent } from './actions/billing/list-billing/list-billing.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { ActionsEmployeComponent } from './actions/employe/actions-employe/actions-employe.component';
 
 
 @NgModule({
@@ -25,12 +27,14 @@ import { FormsModule } from '@angular/forms';
     ListUserComponent,
     ListEmployeComponent,
     CreateEmployeComponent,
-    ListBillingComponent
+    ListBillingComponent,
+    ActionsEmployeComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     BrowserModule,
+    SharedModule,
     FormsModule
   ]
 })

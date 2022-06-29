@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { PageService } from 'src/app/shared/service/page.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,12 +9,13 @@ import { Router } from '@angular/router';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, public pageService:PageService) { }
 
   ngOnInit(): void {
   }
 
-  goTo(url:String){
+  goTo(url:String, title:String){
+    this.pageService.actualPageTitle = title;
     this.router.navigate([url]);
   }
 }
