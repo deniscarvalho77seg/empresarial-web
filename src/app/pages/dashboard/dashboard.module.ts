@@ -15,6 +15,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ActionsEmployeComponent } from './actions/employe/actions-employe/actions-employe.component';
+import { SearchEmployeComponent } from './actions/employe/search-employe/search-employe.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ActionsEmployeComponent } from './actions/employe/actions-employe/actio
     ListEmployeComponent,
     CreateEmployeComponent,
     ListBillingComponent,
-    ActionsEmployeComponent
+    ActionsEmployeComponent,
+    SearchEmployeComponent
   ],
   imports: [
     CommonModule,
