@@ -14,8 +14,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  goTo(url:String, title:String){
-    this.pageService.actualPageTitle = title;
+  goTo(url:String){
     this.router.navigate([url]);
   }
 }

@@ -13,6 +13,7 @@ export class ActionsComponent implements OnInit {
   constructor(public pageService: PageService) { }
 
   ngOnInit(): void {
+    this.pageService.actualPageTitle = "#Ações Rápidas - Escolha a opção";
   }
 
   getListActions(): ActionCard[] {

@@ -13,11 +13,12 @@ export class ActionsEmployeComponent implements OnInit {
   constructor(private router: Router, public pageService: PageService) { }
 
   ngOnInit(): void {
+    this.pageService.actualPageTitle = "#Funcionários - o que deseja fazer?";
   }
 
   goTo(url: String) {
     this.router.navigate([url]);
-  }
+  } 
 
   getListActions(): ActionCard[] {
     return [{
